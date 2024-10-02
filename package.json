@@ -1,0 +1,37 @@
+{
+  "name": "compatibility-react",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@testing-library/jest-dom": "^5.17.0",
+    "@testing-library/user-event": "^13.5.0",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-scripts": "^3.4.1",
+    "web-vitals": "^2.1.4"
+  },
+  "scripts": {
+    "start": "npm run lint || npm run lint:style && react-scripts start",
+    "build": "npm start && react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "lint": "eslint . && exit 0",
+    "lint:style": "stylelint src/**/*.{css,scss,sass,less,styl}"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "devDependencies": {
+    "@babel/core": "^7.25.2",
+    "@babel/eslint-parser": "^7.25.1",
+    "@testing-library/react": "^12.1.5",
+    "eslint": "^7.7.0",
+    "eslint-js": "github:eslint/js",
+    "eslint-plugin-compat": "^3.8.0",
+    "stylelint": "^16.9.0",
+    "stylelint-no-unsupported-browser-features": "^8.0.1"
+  }
+}

@@ -1,15 +1,17 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import "core-js";
+import React from "react";
+import logo from "./logo.svg";
+import "./App.css";
 
 function App() {
   fetch("google.com");
 
-  const req = new PaymentRequest();
+  const str = "Hello, TypeScript!";
+  const newStr = str.replaceAll("TypeScript", "JavaScript Bro");
 
-  const str = "Hello, world!";
-  const newStr = str.replaceAll("world", "JavaScript");
-  console.log(newStr, req)
+  // const req = new PaymentRequest();
+
+  console.log(newStr);
 
   return (
     <div className="App">

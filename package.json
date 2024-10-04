@@ -14,7 +14,7 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "babel src -d build",
+    "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "lint": "eslint . && exit 0",
@@ -38,5 +38,13 @@
     "husky": "^9.1.6",
     "stylelint": "16.0.2",
     "stylelint-no-unsupported-browser-features": "7.1.0"
+  },
+  "browserslist": {
+    "production": [
+      "chrome 72"
+    ],
+    "development": [
+      "chrome 72"
+    ]
   }
 }

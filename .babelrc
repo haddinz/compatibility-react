@@ -3,7 +3,9 @@
     [
       "@babel/preset-env",
       {
-        "targets": "chrome 72"
+        "targets": {
+            "browsers" : ["chrome 72"]
+        }
       }
     ],
     "@babel/preset-react"

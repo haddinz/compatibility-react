@@ -9,7 +9,7 @@ function App() {
   const str = "Hello, TypeScript!";
   const newStr = str.replaceAll("TypeScript", "JavaScript Bro");
 
-  // const req = new PaymentRequest();
+  const req = new PaymentRequest();
 
   console.log(newStr);
 

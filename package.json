@@ -26,6 +26,12 @@
       "react-app/jest"
     ]
   },
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm test",
+      "pre-push": "npm test"
+    }
+  },
   "devDependencies": {
     "@babel/cli": "^7.24.5",
     "@babel/core": "^7.24.5",
@@ -35,7 +41,7 @@
     "@babel/preset-react": "^7.24.7",
     "eslint": "^8.57.0",
     "eslint-plugin-compat": "^6.0.1",
-    "husky": "^9.1.6",
+    "husky": "^4.3.8",
     "stylelint": "16.0.2",
     "stylelint-no-unsupported-browser-features": "7.1.0"
   },

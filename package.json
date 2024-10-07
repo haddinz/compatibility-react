@@ -18,7 +18,11 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "lint": "eslint . && exit 0",
-    "lint:style": "stylelint src/**/*.{css,scss,sass,less,styl}"
+    "lint:style": "stylelint src/**/*.{css,scss,sass,less,styl}",
+    "lint:all": "eslint . && stylelint src/**/*.{css,scss,sass,less,styl}",
+    "prestart": "npm run lint:all",
+    "prebuild": "npm run lint:all",
+    "prepare": "husky install"
   },
   "eslintConfig": {
     "extends": [
@@ -28,7 +32,7 @@
   },
   "husky": {
     "hooks": {
-      "pre-commit": "npm test",
+      "pre-commit": "npm run lint:all && npm test",
       "pre-push": "npm test"
     }
   },

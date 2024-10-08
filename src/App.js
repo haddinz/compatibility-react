@@ -6,10 +6,11 @@ import "./App.css";
 function App() {
   fetch("google.com");
 
-  const str = "Hello, TypeScript!";
-  const newStr = str.replaceAll("TypeScript", "JavaScript Bro");
+  const str = "Hello, TypeScript! Programmer Language, TypeScript";
+  const newStr = str.replaceAll("TypeScript", "JavaScript");
 
-  const req = new PaymentRequest();
+  // const req = new PaymentRequest();
+  const a = "";
 
   console.log(newStr);
 

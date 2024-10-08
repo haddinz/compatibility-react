@@ -20,8 +20,8 @@
     "lint": "eslint . && exit 0",
     "lint:style": "stylelint src/**/*.{css,scss,sass,less,styl}",
     "lint:all": "eslint . && stylelint src/**/*.{css,scss,sass,less,styl}",
-    "prestart": "npm run lint:all",
-    "prebuild": "npm run lint:all",
+    "prestart": "npm test",
+    "prebuild": "npm test",
     "prepare": "husky install"
   },
   "eslintConfig": {
@@ -37,17 +37,16 @@
     }
   },
   "devDependencies": {
-    "@babel/cli": "^7.24.5",
     "@babel/core": "^7.24.5",
     "@babel/eslint-parser": "^7.24.7",
     "@babel/plugin-transform-runtime": "^7.24.7",
-    "@babel/preset-env": "^7.24.5",
     "@babel/preset-react": "^7.24.7",
-    "eslint": "^8.57.0",
-    "eslint-plugin-compat": "^6.0.1",
-    "husky": "^4.3.8",
-    "stylelint": "16.0.2",
-    "stylelint-no-unsupported-browser-features": "7.1.0"
+    "eslint": "8.57.0",
+    "eslint-plugin-compat": "5.0.0",
+    "husky": "4.3.8",
+    "stylelint": "15.11.0",
+    "stylelint-config-standard-scss": "11.1.0",
+    "stylelint-no-unsupported-browser-features": "7.0.0"
   },
   "browserslist": {
     "production": [

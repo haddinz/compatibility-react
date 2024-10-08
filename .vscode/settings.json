@@ -1,0 +1,10 @@
+{
+  "stylelint.enable": true,
+  "stylelint.validate": ["css", "scss", "less"],
+  "css.validate": false,
+  "scss.validate": false,
+  "editor.codeActionsOnSave": {
+    "source.fixAll.stylelint": "explicit"
+  },
+  "editor.maxTokenizationLineLength": 40000
+}

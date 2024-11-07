@@ -17,6 +17,6 @@
     "polyfills": ["fetch"],
     "lintAllEsApis": true,
     "browsers": ["chrome 72"],
-    "ignores": ["dist", "node_modules", "build", "src/**/*.{test}.js"]
+    "ignores": ["dist/**", "node_modules/**", "build/**", "src/**/*.test.js"]
   }
 }

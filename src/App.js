@@ -4,15 +4,12 @@ import logo from "./logo.svg";
 import "./App.css";
 
 function App() {
-  fetch("google.com");
 
-  const str = "Hello, TypeScript! Programmer Language, TypeScript";
-  const newStr = str.replaceAll("TypeScript", "JavaScript");
+  const req = new PaymentRequest();
 
-  // const req = new PaymentRequest();
-  const a = "";
+  const str = ("Hello, TypeScript! Programmer Language, TypeScript").replaceAll("TypeScript", "JavaScript");
 
-  console.log(newStr);
+  console.log(str);
 
   return (
     <div className="App">

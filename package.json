@@ -47,13 +47,5 @@
     "stylelint": "15.11.0",
     "stylelint-config-standard-scss": "11.1.0",
     "stylelint-no-unsupported-browser-features": "7.0.0"
-  },
-  "browserslist": {
-    "production": [
-      "chrome 72"
-    ],
-    "development": [
-      "chrome 72"
-    ]
   }
 }
